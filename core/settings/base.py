@@ -50,6 +50,7 @@ CUSTOM_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
+    "graphene_django",
     "rest_framework",
     "drf_yasg",
     "corsheaders",
@@ -174,3 +175,7 @@ CELERY_TIMEZONE = "Asia/Tashkent"
 
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
+
+GRAPHENE = {
+    "SCHEMA": "graphql-example.apps.core.schema.schema"
+}
